@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoyara Threads | Nepali Luxury Women’s Wear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Nepali luxury palette */
+      --bg:#faf6f2;           /* ivory */
+      --panel:#ffffff;
+      --ink:#1f1f1f;          /* charcoal */
+      --muted:#6b6b6b;
+      --maroon:#7b1e2b;       /* traditional Nepali maroon */
+      --gold:#c9a24d;         /* soft luxury gold */
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink)}
+
+    header{position:sticky;top:0;background:#ffffffee;border-bottom:1px solid #eee;backdrop-filter:blur(6px);z-index:9}
+    nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:18px 22px}
+
+    /* LOGO */
+    .logo{display:flex;align-items:center;gap:10px;font-family:'Playfair Display',serif;font-size:26px;font-weight:600;letter-spacing:.5px}
+    .emblem{width:34px;height:34px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-weight:700}
+    .logo span{color:var(--maroon)}
+
+    nav a{margin-left:20px;text-decoration:none;color:var(--muted);font-weight:500;font-size:14px}
+    nav a:hover{color:var(--maroon)}
+
+    section{padding:80px 22px}
+    .wrap{max-width:1200px;margin:auto}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+    .hero h1{font-family:'Playfair Display',serif;font-size:52px;margin:0 0 16px}
+    .hero p{color:var(--muted);font-size:18px;max-width:520px}
+    .cta{display:inline-block;margin-top:26px;padding:14px 34px;border-radius:40px;background:linear-gradient(135deg,var(--maroon),#9a2a3c);color:#fff;text-decoration:none;font-weight:600}
+    .img{height:420px;border-radius:24px;background:linear-gradient(135deg,#efe6df,#e4d6c9)}
+
+    h2{font-family:'Playfair Display',serif;font-size:40px;margin:0 0 20px}
+    h3{font-family:'Playfair Display',serif;margin:6px 0}
+
+    /* PRODUCTS */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+    .card{background:var(--panel);border-radius:22px;overflow:hidden;box-shadow:0 14px 30px rgba(0,0,0,.08)}
+    .card .img{height:260px}
+    .pad{padding:20px}
+    .price{font-weight:600;color:var(--maroon)}
+    .buy{display:inline-block;margin-top:12px;padding:10px 22px;border-radius:30px;background:var(--maroon);color:#fff;text-decoration:none;font-size:14px}
+
+    /* SPLIT */
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+
+    .tag{display:inline-block;margin:8px 10px 0 0;padding:8px 16px;border-radius:999px;border:1px solid #eee;color:var(--muted);font-size:13px}
+
+    footer{border-top:1px solid #eee;padding:26px;text-align:center;color:#777;font-size:14px}
+
+    @media(max-width:900px){.hero,.split{grid-template-columns:1fr}.hero h1{font-size:40px}}
+    /* PRICE SWITCH */
+    .currency{border:1px solid #eee;border-radius:20px;padding:6px 12px;margin-left:14px;font-size:13px}
+    .visa{margin-top:10px;font-size:12px;color:#555}
+    .visa span{font-weight:600;color:#1a1f71}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <div class="emblem">Z</div>
+      Zoyara <span>Threads</span>
+    </div>
+    <div>
+      <select class="currency" onchange="changeCurrency(this.value)">
+        <option value="USD">USD</option>
+        <option value="NPR">NPR</option>
+        <option value="INR">INR</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <a href="#collections">Collections</a>
+      <a href="#new">New</a>
+      <a href="#fabrics">Fabrics</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#shipping">Shipping</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section>
+  <div class="wrap hero">
+    <div>
+      <h1>Nepali Elegance, Global Luxury</h1>
+      <p>Inspired by Nepali heritage and crafted for modern women. Zoyara Threads offers timeless luxury ethnic wear with international appeal.</p>
+      <a class="cta" href="#collections">Shop Collection</a>
+    </div>
+    <div class="img"></div>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections">
+  <div class="wrap">
+    <h2>Luxury Collections</h2>
+    <div class="grid">
+      <div class="card"><div class="img"></div><div class="pad"><h3>Heritage Cotton Kurta</h3><p class="price"><span class="amount" data-usd="89">USD 89</span></p><a class="buy" href="#">Buy Now</a></div></div>
+      <div class="card"><div class="img"></div><div class="pad"><h3>Festive Maroon Set</h3><p class="price"><span class="amount" data-usd="149">USD 149</span></p><a class="buy" href="#">Buy Now</a></div></div>
+      <div class="card"><div class="img"></div><div class="pad"><h3>Ivory Linen Kurta</h3><p class="price"><span class="amount" data-usd="99">USD 99</span></p><a class="buy" href="#">Buy Now</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW -->
+<section id="new">
+  <div class="wrap">
+    <h2>New Arrivals</h2>
+    <div class="grid">
+      <div class="card"><div class="img"></div><div class="pad"><h3>Silk Blend Kurta Set</h3><p class="price"><span class="amount" data-usd="179">USD 179</span></p><a class="buy" href="#">Buy Now</a></div></div>
+      <div class="card"><div class="img"></div><div class="pad"><h3>Handloom Straight Kurta</h3><p class="price"><span class="amount" data-usd="109">USD 109</span></p><a class="buy" href="#">Buy Now</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FABRICS -->
+<section id="fabrics">
+  <div class="wrap split">
+    <div>
+      <h2>Fine Fabrics</h2>
+      <p>Selected for comfort, elegance, and durability — suitable for global climates.</p>
+      <span class="tag">Nepali Cotton</span>
+      <span class="tag">Linen Silk</span>
+      <span class="tag">Rayon Luxe</span>
+      <span class="tag">Handloom</span>
+    </div>
+    <div class="img"></div>
+  </div>
+</section>
+
+<!-- ATELIER -->
+<section id="atelier">
+  <div class="wrap split">
+    <div class="img"></div>
+    <div>
+      <h2>Women-Led Atelier</h2>
+      <p>Designed and finished with care by skilled women artisans, blending Nepali tradition with modern luxury fashion.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SHIPPING -->
+<section id="shipping">
+  <div class="wrap">
+    <h2>International Shipping</h2>
+    <p>We ship worldwide with secure packaging and trusted logistics partners. Estimated delivery: 5–12 business days.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Zoyara Threads · Nepali Luxury Women’s Wear · Worldwide Shipping
+</footer>
+
+<script>
+  const rates = { USD:1, NPR:133, INR:83, EUR:0.92 };
+  function changeCurrency(cur){
+    document.querySelectorAll('.amount').forEach(el=>{
+      const usd = el.dataset.usd;
+      const value = Math.round(usd * rates[cur]);
+      el.textContent = cur + ' ' + value;
+    });
+  }
+</script>
+</body>
+</html>
